@@ -1,0 +1,14 @@
+/* holds moves made */
+#gamesheet {
+    width: 250px;
+    height: 700px;
+border-color: white;
+border-width: 200;
+box-shadow: 0px 0px 8px 2px #ffffff;
+    /* padding: 20px; */
+    float: left;
+     bottom: 600px; 
+    position: relative;
+    background-color: rgba(28, 31, 30, 0.768);
+    border-radius: 20px;
+}
