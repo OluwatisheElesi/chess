@@ -1,6 +1,6 @@
 /* entire board sheet */
 #board {
-    display: inline-flex;
+    display: inline;
     position: relative;
     margin-right: 200px;
     left : 350px;

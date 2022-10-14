@@ -1,8 +1,8 @@
-// import react
-import React from 'react';
-// import css
-import "./chessboard.css";
 
+// import css
+import { useState } from "react";
+import "./chessboard.css";
+// import "./game.js";
 
 
 // chessboard layout 2 loops for x & y access
@@ -13,6 +13,14 @@ const rows = ["a","b","c","d","e","f","g","h"];
 
 
 export default function Chessboard() {
+
+// const game = useConst (() => new Game());
+// const [state, setState] = useState({
+// player: "1",
+// chessboard: game.chessboard(),
+// });
+
+
     let board  = [];
 
     for(let j =  columns.length - 1; j >= 0; j--) {
@@ -22,7 +30,7 @@ export default function Chessboard() {
             // if even, then we can get the dark color
             if(number % 2 ===0) {
                 board.push(
-                    <span class="squares black-squares" width="80px" height="80px">[{rows[i]}{columns [j]}]
+                    <span class="squares black-squares" data-row="" data-column="" width="80px" height="80px">[{rows[i]}{columns [j]}]
                     </span>
                     );
             
@@ -50,3 +58,4 @@ export default function Chessboard() {
        
        </div>;
 }
+
